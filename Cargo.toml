@@ -1,0 +1,18 @@
+[package]
+name = "multithreaded_web_server"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+    "parallel_task_executor",
+    "http",
+    "server"
+]
+
+[dependencies]
+argh = "0.1.10"
+server = { path = "server" }
+tracing = "0.1.38"
+tracing-attributes = "0.1.24"
+tracing-subscriber = "0.3.17"

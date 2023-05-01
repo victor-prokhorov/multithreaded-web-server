@@ -1,0 +1,13 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+parallel_task_executor = { path = "../parallel_task_executor" }
+http = { path = "../http" }
+serde = { version = "1.0.117", features = ["derive"] }
+serde_json = "1.0.59"
+chrono = { version = "0.4.24", features = ["serde"] }
+tracing = "0.1.38"
+tracing-subscriber = { version = "0.3.16", features = ["env-filter", "std"] }
